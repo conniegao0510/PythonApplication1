@@ -28,15 +28,22 @@
     <Compile Include="myModule1.py" />
     <Compile Include="myModule2.py" />
     <Compile Include="myModule3.py" />
+    <Compile Include="my_package\package_model2.py" />
+    <Compile Include="my_package\package_model1.py" />
     <Compile Include="PythonApplication1.py" />
+    <Compile Include="my_package\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bill.txt" />
-    <Content Include="bill.txt.bak" />
-    <Content Include="file.txt" />
-    <Content Include="file1.txt" />
-    <Content Include="file2.txt" />
-    <Content Include="linux.txt" />
+    <Folder Include="my_package\" />
+    <Folder Include="Resource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\bill.txt" />
+    <Content Include="Resource\bill.txt.bak" />
+    <Content Include="Resource\file.txt" />
+    <Content Include="Resource\file1.txt" />
+    <Content Include="Resource\file2.txt" />
+    <Content Include="Resource\linux.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

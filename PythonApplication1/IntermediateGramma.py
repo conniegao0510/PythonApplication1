@@ -39,7 +39,7 @@ test_func(compute)
 test_func(lambda x, y:x ** y)
 
 # 6.文件处理
-f = open('file.txt','r',encoding="UTF-8")
+f = open('Resource/file.txt','r',encoding="UTF-8")
 print(f'type:{type(f)}')
 print(f'Read 10 chars:{f.read(10)}')
 #print(f'Read all chars:{f.read()}')
@@ -52,19 +52,19 @@ content = f.readlines()
 print(f'Read Lines type: {type(content)} :typeReadlines:{content}')
 f.close()
 #For 循环读取文件
-f = open('file.txt','r',encoding="UTF-8")
+f = open('Resource/file.txt','r',encoding="UTF-8")
 for line in f:
     print(f'type:{type(line)}:{line}')
 f.close()
 # with open 可以在操作完成之后自动关闭文件，避免遗忘关闭文件
-with open('file.txt','r',encoding="UTF-8") as f:
+with open('Resource/file.txt','r',encoding="UTF-8") as f:
     line = f.readlines()
     print(f'withopen:------------------------\n type:{type(line)},{line}')
 
 # 7.练习统计文本文件种出现某字符的个数
 # 方法一：read（）返回字符串
 # 方法二：readline() 返回一行行，用空格切分的数组
-with open('file.txt','r',encoding="UTF-8") as f:
+with open('Resource/file.txt','r',encoding="UTF-8") as f:
     #print(f'人生的个数：{f.read().count("人生")}')
     count = 0
     for line in f:
@@ -81,21 +81,21 @@ with open('file.txt','r',encoding="UTF-8") as f:
 
 # 8.文件写入
 import time
-with open('file1.txt','w',encoding="UTF-8") as f:
+with open('Resource/file1.txt','w',encoding="UTF-8") as f:
     f.write('Hello World')
     #time.sleep(600000) #运行到这里看一下文件内容，由此判断是否将内容写入内存缓冲区，open的文件不存在的话，会自动创建一个
     #f.flush() # f.close()方法内置了flush方法
 
-with open('file2.txt','a',encoding="UTF-8") as f:
+with open('Resource/file2.txt','a',encoding="UTF-8") as f:
     f.write('Hello, Connie!')
 
-with open('file2.txt','a',encoding="UTF-8") as f:
+with open('Resource/file2.txt','a',encoding="UTF-8") as f:
     f.write('\nWelcome to SCIS!')
 
 
 # 9.文件处理综合案例 备份文件
 # 备份2023文件夹下面的bill.txt中的正式记录，测试记录丢弃
-with open('bill.txt','r',encoding="UTF-8") as f, open('bill.txt.bak','w',encoding="UTF-8") as f1:
+with open('Resource/bill.txt','r',encoding="UTF-8") as f, open('Resource/bill.txt.bak','w',encoding="UTF-8") as f1:
     for line in f:
         line = line.strip()
         if(line.split(",")[-1] == "test"):
@@ -166,3 +166,13 @@ testA(2, 2)
 testB(2, 2)
 test(2, 2)
 
+# 14.导入自定义模块
+#import my_package.package_model1
+#my_package.package_model1.mypack_m1(5,18)
+
+#from my_package import package_model1
+#package_model1.mypack_m1(5,18)
+
+from my_package import *
+package_model1.mypack_m1(5,18)
+package_model2.mypack_m2(5,18)
