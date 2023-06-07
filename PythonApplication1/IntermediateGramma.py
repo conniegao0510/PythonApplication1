@@ -161,6 +161,8 @@ from myModule2 import my_test
 my_test(5,3)
 
 from myModule3 import *
+from myModule3 import test
 testA(2, 2)
 testB(2, 2)
 test(2, 2)
+

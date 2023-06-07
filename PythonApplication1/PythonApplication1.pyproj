@@ -31,7 +31,12 @@
     <Compile Include="PythonApplication1.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bill.txt" />
+    <Content Include="bill.txt.bak" />
     <Content Include="file.txt" />
+    <Content Include="file1.txt" />
+    <Content Include="file2.txt" />
+    <Content Include="linux.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
