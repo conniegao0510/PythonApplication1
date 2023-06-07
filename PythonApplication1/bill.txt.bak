@@ -1,0 +1,10 @@
+name,date,money,type,remarks
+zhangsan,2022/1/1,100000,expense,formal
+zhangsan,2022/1/1,200000,income,formal
+zhangsan,2022/1/1,300000,expense,formal
+lisi,2023/1/1,100000,income,formal
+lisi,2023/1/1,200000,expense,formal
+wangwu,2023/2/1,200000,income,formal
+wangwu,2023/2/1,300000,expense,formal
+zhaoliu,2023/3/1,300000,income,formal
+zhaoliu,2023/3/1,400000,expense,formal

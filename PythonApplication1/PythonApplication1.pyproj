@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>52313944-74ab-49f1-874a-86e8ec06a69c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataContainer.py</StartupFile>
+    <StartupFile>IntermediateGramma.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataContainer.py" />
+    <Compile Include="fixByAi.py" />
     <Compile Include="IntermediateGramma.py" />
+    <Compile Include="myModule.py" />
+    <Compile Include="myModule1.py" />
+    <Compile Include="myModule2.py" />
+    <Compile Include="myModule3.py" />
     <Compile Include="PythonApplication1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="file.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
